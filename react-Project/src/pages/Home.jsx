@@ -1,0 +1,23 @@
+import React from 'react'
+import Slider from './Curosel'
+import Curosel from './Curosel'
+import ServiceProducts from './ServiceProducts'
+import DiscountProducts from './DiscountProducts'
+import NewArrivals from './NewArrivals'
+import BigDeals from './BigDeals'
+import SingleProduct from './SingleProduct'
+import ShopFilter from './ShopFilter'
+
+
+export default function Home() {
+  return (
+    <div>
+      <Curosel/>
+      <ServiceProducts/>
+      <DiscountProducts/>
+      <NewArrivals/>
+      <BigDeals/>
+      <SingleProduct/>
+    </div>
+  )
+}
