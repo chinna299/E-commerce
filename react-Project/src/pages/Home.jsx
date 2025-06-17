@@ -6,7 +6,6 @@ import DiscountProducts from './DiscountProducts'
 import NewArrivals from './NewArrivals'
 import BigDeals from './BigDeals'
 import SingleProduct from './SingleProduct'
-import ShopFilter from './ShopFilter'
 
 
 export default function Home() {
