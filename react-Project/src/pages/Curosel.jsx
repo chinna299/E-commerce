@@ -49,4 +49,5 @@ const Curosel = () => {
     );
 };
 
+
 export default Curosel;

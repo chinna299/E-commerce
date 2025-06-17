@@ -73,13 +73,11 @@ export default function ShopFilter() {
                         </select>
                     </div>
                 </div>
-
                 <div className="relative w-[700px] mt-[10px] mx-[150px]">
                     <input type="text" placeholder="Search..." onChange={(e) => setSearchQuery(e.target.value)} className="w-full border border-gray-300 rounded-2xl px-4 h-[50px] focus:outline-none shadow-md pr-12" />
                     <IoSearch className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-500 text-2xl" />
                 </div>
             </div>
-
             {/* Product Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-6">
                 {filteredProducts.length === 0 && (
@@ -114,7 +112,6 @@ export default function ShopFilter() {
                     );
                 })}
             </div>
-
             <ToastContainer />
         </div>
     );

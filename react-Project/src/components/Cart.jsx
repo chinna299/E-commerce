@@ -4,12 +4,14 @@ import { removeFromCart, updateQuantity } from "../ReduxToolKit-Store/ProductSli
 import { FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
+
 export default function Cart() {
   const cartProducts = useSelector(state => state.cartItems.cart);
   const totalItems = useSelector(state => state.cartItems.cartQuantity);
   const dispatch = useDispatch();
   const totalPrice = cartProducts.reduce((total, item) => total + item.price * item.quantity, 0);
 
+  // If cart is empty, show a message and a button to go back to home
   return (
     <div className="p-6 max-w-6xl mx-auto mt-[80px]">
       {cartProducts.length === 0 ? (
@@ -21,14 +23,14 @@ export default function Cart() {
           <Link to="/" className="bg-blue-500 text-white px-4 py-2 mt-2 rounded-md shadow-md hover:bg-blue-700 transition duration-300">
             Back to Home
           </Link>
-
+   
           {/* Empty Cart Message */}
           <div className="mt-6 p-6 border border-gray-300 shadow-md rounded-md">
             <h3 className="text-lg font-semibold text-gray-600">Your Cart is Empty</h3>
             <p className="text-gray-500">Please add items to your cart.</p>
-
+            {/* Continue Shopping Button */}
             <Link to="/shopFilter" className="mt-3 inline-block bg-green-500 text-white px-4 py-2 rounded-md shadow-md hover:bg-green-700 transition duration-300">
-              Continue Shopping
+               Continue Shopping
             </Link>
           </div>
         </div>
@@ -94,3 +96,5 @@ export default function Cart() {
     </div>
   );
 }
+// Cart component that displays the cart items, allows quantity updates, and shows total price
+// It also handles empty cart state with a message and a button to continue shopping
