@@ -21,3 +21,6 @@ export default function MyContext({children}) {
     </div>
   )
 }
+
+// This code creates a global context using React's Context API to manage product data across the application.
+// It initializes the context with an empty array for products and discount products, fetches data from a local file, and provides this data to all child components through the context provider.
