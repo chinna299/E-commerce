@@ -15,3 +15,4 @@ export default function App() {
     </div>
   )
 }
+//this is my app.jsx component i want to render all my common  commponents in all pages 
