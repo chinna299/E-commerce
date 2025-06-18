@@ -13,23 +13,23 @@ export default function Cart() {
 
   // If cart is empty, show a message and a button to go back to home
   return (
-    <div className="p-6 max-w-6xl mx-auto mt-[80px]">
+    <div className="p-6 max-w-6xl mx-auto mt-[100px]">
       {cartProducts.length === 0 ? (
         <div className="text-center">
           {/* Header */}
           <h2 className="text-3xl font-bold mb-4">Your Cart (0)</h2>
 
           {/* Back to Home Button */}
-          <Link to="/" className="bg-blue-500 text-white px-4 py-2 mt-2 rounded-md shadow-md hover:bg-blue-700 transition duration-300">
+          <Link to="/" className="bg-blue-800 text-white px-4 py-2 mt-2 rounded-md shadow-md hover:bg-blue-600 transition duration-300">
             Back to Home
           </Link>
    
           {/* Empty Cart Message */}
-          <div className="mt-6 p-6 border border-gray-300 shadow-md rounded-md">
+          <div className="mt-6 p-6 border border-gray-300 shadow-xl hover:shadow-2xl rounded-md">
             <h3 className="text-lg font-semibold text-gray-600">Your Cart is Empty</h3>
             <p className="text-gray-500">Please add items to your cart.</p>
             {/* Continue Shopping Button */}
-            <Link to="/shopFilter" className="mt-3 inline-block bg-green-500 text-white px-4 py-2 rounded-md shadow-md hover:bg-green-700 transition duration-300">
+            <Link to="/shopFilter" className="mt-3 inline-block bg-red-500 text-white px-4 py-2 rounded-md shadow-md hover:bg-red-700 transition duration-300">
                Continue Shopping
             </Link>
           </div>
@@ -80,15 +80,16 @@ export default function Cart() {
                     +
                   </button>
                 </div>
+                
               </div>
             ))}
           </div>
 
           {/* Right Column - Cart Summary */}
-          <div className="bg-gray-100 p-6 rounded-lg shadow-lg space-y-4 h-fit">
-            <h2 className="text-xl font-semibold mb-3 text-center">Cart Summary</h2>
+          <div className="bg-gray-100 p-8 rounded-lg shadow-lg space-y-4 h-fit">
+            <h2 className="text-xl font-bold mb-3 text-center">Cart Summary</h2>
             <hr className="border-gray-300 mb-4" />
-            <p className="text-md">Total Items: {totalItems}</p>
+            <p className="text-md font-semibold">Total Items: {totalItems}</p>
             <p className="text-2xl font-bold text-red-400">Total Price: ${totalPrice.toFixed(2)}</p>
           </div>
         </div>
