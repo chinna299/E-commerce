@@ -11,17 +11,16 @@ export default function Footer() {
                     {/* Left Column: Logo + Description + Socials */}
                     <div>
                         <div className="flex items-center text-teal-400 justify-center lg:justify-start">
-                            <IoBagHandle className="h-10 w-10" />
-                            <span className="ml-2 text-3xl font-bold tracking-wide">MART</span>
+                            <IoBagHandle className="h-12 w-12" />
+                            <span className="ml-2 text-4xl font-bold tracking-wide">MART</span>
                         </div>
 
                         <p className="mt-4 max-w-md text-center lg:text-left text-gray-400">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-                            consequuntur amet culpa cum itaque neque.
+                           Your one-stop shop for all your needs. Whether you're looking for the latest gadgets, Sofas, or home essentials, we've got you covered. Enjoy a seamless shopping experience with us!
                         </p>
 
                         {/* Social Icons */}
-                        <div className="mt-6 flex justify-center lg:justify-start gap-6">
+                        <div className="mt-8 flex justify-center lg:justify-start gap-6">
                             <a href="#" className="hover:text-teal-400">
                                 <FaFacebook size={24} />
                             </a>
