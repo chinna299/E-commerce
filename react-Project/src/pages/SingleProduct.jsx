@@ -132,6 +132,7 @@ export default function SingleProduct() {
         {/* Related Products */}
         <h2 className="text-3xl font-bold mt-12">Related Products</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {/* Map through related products and display them */}
           {relatedProducts.map((item) => (
             <div
               key={item.id}
@@ -162,7 +163,7 @@ export default function SingleProduct() {
           ))}
         </div>
       </div>
-      <ToastContainer />
+      <ToastContainer />  {/* Toast Container to render notifications */}
     </div>
   );
 }

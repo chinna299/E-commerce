@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaShippingFast, FaCreditCard, FaShieldAlt, FaHeadset } from 'react-icons/fa';
 
-
+// This component displays a set of service products with icons, titles, and subtitles.
 
 export default function ServiceProducts() {
     const serviceData = [

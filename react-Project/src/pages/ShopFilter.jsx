@@ -47,6 +47,8 @@ export default function ShopFilter() {
         });
     };
 
+    // Render the component
+
     return (
         <div>
             {/* Background Banner */}
