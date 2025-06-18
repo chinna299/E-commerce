@@ -32,13 +32,13 @@ export default function ServiceProducts() {
     ];
 
     return (
-        <div className="service-products flex flex-wrap justify-center items-center gap-14 p-6 bg-gray-100">
+        <div className="service-products flex flex-wrap justify-center items-center gap-16 mt-[40px] p-6 bg-gray-100">
             {serviceData.map((item, index) => (
                 <div
                     key={index}
-                    className="w-76 h-56 p-8 rounded-xl cursor-pointer shadow-lg flex flex-col items-center text-center hover:shadow-xl transform hover:scale-105 transition duration-300"
-                    style={{ backgroundColor: item.bg }}
-                >
+                    className="w-76 h-56 p-8 rounded-xl cursor-pointer shadow-lg flex flex-col items-center text-center hover:shadow-2xl transform hover:scale-105 transition duration-300"
+                    style={{ backgroundColor: item.bg }}>
+                    {/* Icon, Title, and Subtitle */}
                     <div className="icon text-4xl mb-4 text-gray-700">{item.icon}</div>
                     <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
                     <p className="text-gray-600">{item.subtitle}</p>
@@ -47,4 +47,6 @@ export default function ServiceProducts() {
         </div>
     );
 }
+// This component displays a set of service products with icons, titles, and subtitles.
+// It uses Tailwind CSS for styling and includes hover effects for interactivity.
 
