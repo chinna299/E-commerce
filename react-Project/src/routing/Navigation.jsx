@@ -7,6 +7,8 @@ import SingleProduct from '../pages/SingleProduct';
 import ShopFilter from '../pages/ShopFilter';
 
 export default function Navigation() {
+    // This component sets up the routing for the application using React Router.
+    // It defines routes for the home page, shop filter page, cart page, and single product page.
     return (
             <Routes>
                 <Route path="/" element={<Home />} />
