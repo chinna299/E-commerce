@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { globalContext } from '../context/MyContext';
 import { useContext } from 'react';
 import { FaHeart } from 'react-icons/fa';
@@ -31,6 +30,12 @@ export default function NewArrivals() {
             theme: "light",
         });
     };
+
+
+    // Render the component
+    if (arrivals.length === 0) {
+        return <p className="text-center text-xl font-semibold">No new arrivals available at the moment.</p>;
+    }
    
 
   return (
