@@ -18,3 +18,5 @@ createRoot(document.getElementById('root')).render(
     </MyContext>
   </StrictMode>,
 )
+
+//this my main Component which can be render on the browser
