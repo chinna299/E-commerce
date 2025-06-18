@@ -13,14 +13,14 @@ const Curosel = () => {
         autoplay: true,
         autoplaySpeed: 2000,
     };
-
+    // Custom styles for the slider
     return (
         <div className="flex flex-col items-center justify-center px-4 mt-[80px] mb-8">
             <div className="w-[95%]">
                 <Slider {...settings}>
                     {SliderData.map((d) => (    
                         <div key={d.id}>
-                            <div className="flex w-full flex-row bg-white rounded-xl ml-[80px] overflow-hidden my-6 min-h-[620px]">
+                            <div className="flex w-full flex-row bg-white rounded-xl  ml-[80px] overflow-hidden my-6 min-h-[620px]">
                                 {/* Left Content */}
                                 <div className="w-2/5 flex flex-col justify-center p-6">
                                     <div>
@@ -30,14 +30,15 @@ const Curosel = () => {
                                             Visit Collections
                                         </button>
                                     </div>
-                                </div>
+                                </div>  
+
 
                                 {/* Right Image - with shift */}
-                                <div className="w-3/5 ml-[30px] h-full mt-[40px] ml-[50px] pl-10">
+                                <div className="w-3/5  h-3/4 mt-[40px] ml-[50px] pl-10">
                                     <img
                                         src={d.img}
                                         alt={d.title}
-                                        className="h-full object-cover rounded-r-xl my-6"
+                                        className="h-full object-cover rounded-r-xl my-7"
                                     />
                                 </div>
                             </div>
