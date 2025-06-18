@@ -20,3 +20,5 @@ export default function Home() {
     </div>
   )
 }
+
+//this is the Home component that imports and renders various components like Curosel, ServiceProducts, DiscountProducts, NewArrivals, BigDeals, and SingleProduct to create a complete homepage layout.

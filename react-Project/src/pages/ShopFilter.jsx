@@ -112,7 +112,7 @@ export default function ShopFilter() {
                     );
                 })}
             </div>
-            <ToastContainer />
+            <ToastContainer />  {/* Toast Container to render notifications */}
         </div>
     );
 }
