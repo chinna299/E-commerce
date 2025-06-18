@@ -86,4 +86,3 @@ export default function DiscountProducts() {
     );
 }
 // This component displays discount products with a heart icon, discount label, and an add-to-cart button.
-// It uses React Context for data, Redux Toolkit for state management, and react-toastify for notifications.
