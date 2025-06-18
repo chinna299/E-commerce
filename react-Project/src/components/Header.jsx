@@ -7,8 +7,10 @@ import { useSelector } from "react-redux";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+
 export default function Header() {
   const cartCount = useSelector((state) => state.cartItems.cart.length);
+
 
   return (
     <div className="fixed top-0 left-0 w-full bg-white shadow-md p-3 z-50">
@@ -17,11 +19,12 @@ export default function Header() {
         <div className="flex items-center gap-2">
           <Link to="/" className="flex items-center gap-2 text-black font-bold text-2xl">
             <IoBagHandle className="text-5xl" />
-            <span className="text-2xl font-bold">MART</span>
+            <span className="text-3xl font-bold">MART</span>
           </Link>
         </div>
-
-        <ul className="ml-auto flex gap-15 font-bold text-lg md:text-md lg:text-xl items-center">
+ 
+        
+        <ul className="ml-auto flex gap-17 font-bold text-lg md:text-md lg:text-xl items-center">
           <li><NavLink to="/">Home</NavLink></li>
           <li><NavLink to="/shopFilter">Shop</NavLink></li>
           <li><NavLink to="/cart">Cart</NavLink></li>
