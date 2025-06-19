@@ -35,9 +35,7 @@ export default function BigDeals() {
     };
 
     // Render the component
-    if (bigDeals.length === 0) {
-        return <p className="text-center text-xl font-semibold">No big deals available at the moment.</p>;
-    }
+    
     return (
         <div className="p-6">
             <div className="col-span-full mt-3 mb-6">

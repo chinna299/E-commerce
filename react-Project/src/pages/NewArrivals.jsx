@@ -33,9 +33,6 @@ export default function NewArrivals() {
 
 
     // Render the component
-    if (arrivals.length === 0) {
-        return <p className="text-center text-xl font-semibold">No new arrivals available at the moment.</p>;
-    }
    
 
   return (
